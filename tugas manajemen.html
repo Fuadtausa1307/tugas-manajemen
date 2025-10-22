@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laporan Proyek AI - UIN Ar-Raniry</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  /* Header */
+  .header {
+    background: #000000;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFD700;
+  }
+  .header-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  /* Sidebar */
+  aside {
+    height: calc(100vh - 52px);
+    position: sticky;
+    top: 52px;
+    background: #111111;
+    border-right: 2px solid #FFD700;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+  }
+  .nav-link {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #ccc;
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    background: #FFD700;
+    color: #000;
+    transform: translateX(5px);
+  }
+  .nav-link.active {
+    background: #FFD700;
+    color: #000;
+  }
+
+  /* Card */
+  .card {
+    background: #111111;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border: 2px solid #FFD700;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: #DAA520;
+  }
+
+  /* Hero */
+  .hero-bg {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  }
+  .section-bg {
+    background: #000000;
+  }
+
+  /* Fade-in */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- Header -->
+<header class="zenius-header h-16 flex items-center">
+  <div class="container mx-auto px-6 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="D:\c5.png" alt="Logo UIN Ar-Raniry" class="rounded-full border-2 border-yellow-400">
+      <h1 class="text-xl font-bold text-yellow-400">UIN Ar-Raniry</h1>
+    </div>
+    <div class="space-x-4">
+      <span class="text-yellow-400 font-semibold">FST UINAR</span>
+    </div>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero-bg py-20 fade-in show">
+  <div class="container mx-auto px-6 max-w-4xl text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">LAPORAN PROYEK IT - KELOMPOK 1</h1>
+    <p class="text-lg text-gray-300 mb-2">Tema: <strong class="text-yellow-400">Pemanfaatan Kecerdasan Buatan (AI) dalam Dunia Pendidikan</strong></p>
+    <p class="text-sm text-gray-400">UIN Ar-Raniry Banda Aceh | Tahun 2025</p>
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="container mx-auto px-6 py-16 flex flex-col md:flex-row gap-8 section-bg">
+
+  <!-- Sidebar -->
+  <aside class="md:w-1/4">
+    <h3 class="text-lg font-bold text-yellow-400 mb-4">Navigasi</h3>
+    <ul class="space-y-2" id="navLinks">
+      <li><a href="#pendahuluan" class="nav-link">Pendahuluan</a></li>
+      <li><a href="#pembahasan" class="nav-link">Pembahasan Materi</a></li>
+      <li><a href="#video" class="nav-link">Video Proyek</a></li>
+      <li><a href="#anggota" class="nav-link">Anggota Kelompok</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="md:w-3/4 space-y-16">
+
+    <!-- Pendahuluan -->
+    <section class="fade-in" id="pendahuluan">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6">📖 Pendahuluan</h2>
+      <p class="text-lg leading-relaxed text-gray-300 mb-8">
+        Di era digital saat ini, kecerdasan buatan (Artificial Intelligence) telah membawa dampak besar dalam dunia pendidikan. AI hadir bukan sekadar alat bantu, tetapi sebagai sistem cerdas yang mampu mempelajari, menganalisis, dan menyesuaikan proses pembelajaran agar lebih efektif. Pendidikan modern tidak lagi terbatas pada ruang kelas fisik. Dengan AI, siswa bisa belajar kapan saja dan di mana saja melalui platform digital interaktif.
+      </p>
+    </section>
+
+    <!-- Pembahasan Materi -->
+    <section class="fade-in" id="pembahasan">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6">💡 Pembahasan Materi</h2>
+      <p class="text-lg leading-relaxed text-gray-300 mb-4">
+        Pemanfaatan AI dalam pendidikan memberikan banyak manfaat. AI dapat menganalisis kemampuan tiap siswa dan memberikan materi sesuai kemampuan mereka. Contohnya pada aplikasi seperti Duolingo atau ChatGPT.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-300 mb-4">
+        Guru juga mendapat manfaat dari AI: menilai tugas, menganalisis hasil ujian, dan membuat laporan perkembangan siswa lebih cepat. Namun tantangan muncul seperti ketergantungan teknologi dan isu privasi data.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-300 mb-4">
+        Oleh karena itu, penggunaan AI harus bijak, dengan pengawasan dan regulasi tepat agar manfaatnya maksimal tanpa dampak negatif.
+      </p>
+    </section>
+
+    <!-- Video Proyek -->
+    <section class="fade-in" id="video">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-8">🎬 Video Proyek</h2>
+      <div class="card p-6">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Video Proyek AI dalam Pendidikan" 
+          width="100%" 
+          height="400" 
+          frameborder="0" 
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+<!-- Anggota Kelompok -->
+<section class="fade-in" id="anggota">
+  <h2 class="text-3xl font-bold text-yellow-400 mb-8">👥 Anggota Kelompok</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="card p-6 text-center">
+      <img src="D:\bunaiya.png" alt="Bunaiya Alfuad Tausa" class="w-32 h-48 object-cover mx-auto mb-4 border-4 border-yellow-400">
+      <h3 class="text-lg font-bold text-gray-800">Bunaiya Alfuad Tausa</h3>
+      <p class="text-gray-600">230705209</p>
+    </div>
+    <div class="card p-6 text-center">
+      <img src="D:\c7.png" alt="Al Kausar Ermanda" class="w-32 h-48 object-cover mx-auto mb-4 border-4 border-yellow-400">
+      <h3 class="text-lg font-bold text-gray-800">Al Kausar Ermanda</h3>
+      <p class="text-gray-600">240705</p>
+    </div>
+    <div class="card p-6 text-center">
+      <img src="https://images.unsplash.com" alt="Muhammad Farid" class="w-32 h-48 object-cover mx-auto mb-4 border-4 border-yellow-400">
+      <h3 class="text-lg font-bold text-gray-800">Muhammad Farid</h3>
+      <p class="text-gray-600">220705</p>
+    </div>
+    <div class="card p-6 text-center">
+      <img src="https://images.unsplash.com" alt="Abdul Aziz" class="w-32 h-48 object-cover mx-auto mb-4 border-4 border-yellow-400">
+      <h3 class="text-lg font-bold text-gray-800">Abdul Aziz</h3>
+      <p class="text-gray-600">220705</p>
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+</div>
+
+<script>
+  // Fade-in saat scroll
+  const faders = document.querySelectorAll('.fade-in');
+  window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if(top < windowHeight - 50){
+        el.classList.add('show');
+      }
+    });
+  });
+
+  // Smooth scroll + highlight nav active
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY + 60; // offset header
+    navLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+      if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+<!-- Footer -->
+<footer class="bg-[#111111] text-gray-300 pt-8">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- Logo UIN -->
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="D:\c5.png" alt="Logo UIN Ar-Raniry" class="w-10 h-10 rounded-full border-2 border-yellow-400 mr-3">
+      <span class="font-semibold text-yellow-400">UIN Ar-Raniry</span>
+    </div>
+
+    <!-- Navigasi Footer -->
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <a href="#materi" class="hover:text-yellow-400 transition-colors">Materi</a>
+      <a href="#video" class="hover:text-yellow-400 transition-colors">Video</a>
+      <a href="#anggota" class="hover:text-yellow-400 transition-colors">Kelompok</a>
+      <a href="#timeline" class="hover:text-yellow-400 transition-colors">Timeline</a>
+    </div>
+
+    <!-- Kelompok 1 -->
+    <div class="text-yellow-400 font-semibold">Teknologi Informasi</div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-6 text-center text-gray-500 text-sm pb-4">
+    © 2025 [Fuad][Kausar][Farid][Abdul]
+  </div>
+</footer>
+
+
+</body>
+</html>
